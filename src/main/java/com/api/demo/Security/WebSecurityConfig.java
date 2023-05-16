@@ -42,8 +42,6 @@ public class WebSecurityConfig{
                 .and()
                 .csrf().disable()
                 .authorizeRequests()
-//                .requestMatchers("/api/educaciones/getAll")
-//                .permitAll()
                 .anyRequest()
                 .authenticated()
                 .and()

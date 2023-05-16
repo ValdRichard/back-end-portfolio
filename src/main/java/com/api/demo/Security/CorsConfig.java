@@ -23,12 +23,12 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry){
                 registry.addMapping("/login")
-                        .allowedOrigins("/**")
+                        .allowedOrigins("*")
                         .allowedMethods("*")
                         .exposedHeaders("*");
                 
                 registry.addMapping("/api/**")
-                        .allowedOrigins("/**")
+                        .allowedOrigins("*")
                         .allowedMethods("*");
             }
         };

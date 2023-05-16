@@ -4,14 +4,16 @@
  */
 package com.api.demo.Security;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  *
  * @author valdiviaricardo
  */
 
-@Data
+@Setter
+@Getter
 public class AuthCredentials {
     private String email;
     private String password;

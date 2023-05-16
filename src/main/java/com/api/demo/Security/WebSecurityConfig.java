@@ -26,7 +26,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @AllArgsConstructor
-public class WebSecurityConfig {
+public class WebSecurityConfig{
 
     private final UserDetailsService userDetailsService;
     private final JWTAuthorizationFilter jwtAuthorizationFilter;
@@ -41,7 +41,7 @@ public class WebSecurityConfig {
                 .cors()
                 .and()
                 .csrf().disable()
-                .authorizeHttpRequests()
+                .authorizeRequests()
 //                .requestMatchers("/api/educaciones/getAll")
 //                .permitAll()
                 .anyRequest()

@@ -3,8 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.api.demo.Initializer;
-import com.portfolio_bd.api.Model.Usuario;
-import com.portfolio_bd.api.Repository.UsuarioRepository;
+
+import com.api.demo.Model.Usuario;
+import com.api.demo.Repository.UsuarioRepository;
 import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
